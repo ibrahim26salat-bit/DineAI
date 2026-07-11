@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Recommendation</title>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
-<h1>Recommended Restaurants</h1>
+<header>
+    <h1>🍽 Recommended Restaurants</h1>
+</header>
 
-<p>Your restaurant recommendations will appear here.</p>
+<div class="container">
 
-<a href="/">Home</a>
+    <div class="card">
+        <h2>Restaurant 1</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <p>Italian Cuisine</p>
+    </div>
+
+    <div class="card">
+        <h2>Restaurant 2</h2>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>North Indian Cuisine</p>
+    </div>
+
+    <div class="card">
+        <h2>Restaurant 3</h2>
+        <p>⭐⭐⭐⭐☆</p>
+        <p>Chinese Cuisine</p>
+    </div>
+
+    <button onclick="location.href='/'">
+        Back Home
+    </button>
+
+</div>
 
 </body>
-
 </html>
