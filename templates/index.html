@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>DineAI</title>
+
+<title>DineAI</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
+
 <body>
 
-<h1>🍽️ DineAI</h1>
+<header>
 
-<h2>AI Restaurant Recommendation System</h2>
+<h1>🍽 DineAI</h1>
 
-<p>Welcome to DineAI.</p>
+<p>AI Powered Restaurant Recommendation System</p>
 
-<a href="/about">About</a>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Welcome</h2>
+
+<p>Find restaurants with Artificial Intelligence.</p>
+
+<button onclick="location.href='/recommend'">
+
+Get Recommendation
+
+</button>
+
+</div>
+
+</div>
 
 </body>
+
 </html>
