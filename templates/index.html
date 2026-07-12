@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>DineAI</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-<header>
-    <h1>🍽 DineAI</h1>
-    <p>AI Powered Restaurant Recommendation System</p>
-</header>
+<h1>DineAI 🍽️</h1>
+
+<h3>AI Restaurant Recommendation System</h3>
 
 <div class="container">
 
+{% for r in restaurants %}
+
 <div class="card">
 
-<h2>Welcome to DineAI</h2>
+<h2>{{r.name}}</h2>
 
-<p>Find the best restaurants based on your preferences.</p>
+<p><b>Cuisine:</b> {{r.cuisine}}</p>
 
-<a href="/recommend"><button>Get Recommendation</button></a>
+<p><b>Rating:</b> ⭐ {{r.rating}}</p>
 
-<a href="/about"><button>About</button></a>
+<p><b>Average Cost:</b> {{r.price}}</p>
 
 </div>
+
+{% endfor %}
 
 </div>
 
